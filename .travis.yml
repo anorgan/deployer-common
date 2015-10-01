@@ -22,7 +22,7 @@ addons:
   apt:
     packages:
     - libssh2-1-dev
-    - php5-ssh2
+    - libssh2-php
 
 before_script:
   - php -m | grep ssh2
