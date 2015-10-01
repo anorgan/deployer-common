@@ -1,0 +1,4 @@
+suites:
+    default:
+        namespace: Deployer
+        psr4_prefix: Deployer
