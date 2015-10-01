@@ -19,10 +19,12 @@ matrix:
   fast_finish: true
 
 before_script:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y -qq libssh2-1-dev libssh2-php
+  - pecl install -f ssh2-beta < .noninteractive
+  - php -m | grep ssh2
   - composer self-update
-
-install:
-  - composer install
+  - composer install --dev
 
 script:
    - bin/phpspec run --format=pretty
