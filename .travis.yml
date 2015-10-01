@@ -25,7 +25,6 @@ addons:
     - libssh2-php
 
 before_script:
-  - php -m | grep ssh2
   - composer self-update
   - composer install --dev
 
