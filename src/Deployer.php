@@ -1,10 +1,10 @@
 <?php
 
-namespace Deployer;
+namespace Deployer\Common;
 
-use Deployer\Server\AbstractServer;
-use Deployer\Server\Local;
-use Deployer\Server\Ssh;
+use Deployer\Common\Server\AbstractServer;
+use Deployer\Common\Server\Local;
+use Deployer\Common\Server\Ssh;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

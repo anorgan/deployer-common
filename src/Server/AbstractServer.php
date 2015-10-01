@@ -1,6 +1,6 @@
 <?php
 
-namespace Deployer\Server;
+namespace Deployer\Common\Server;
 
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;

@@ -1,4 +1,4 @@
 suites:
     default:
-        namespace: Deployer
-        psr4_prefix: Deployer
+        namespace: Deployer\Common
+        psr4_prefix: Deployer\Common

@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Deployer;
+namespace spec\Deployer\Common;
 
-use Deployer\Server\Local;
+use Deployer\Common\Server\Local;
 use PhpSpec\ObjectBehavior;
 
 class DeployStepSpec extends ObjectBehavior
@@ -23,7 +23,7 @@ class DeployStepSpec extends ObjectBehavior
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('Deployer\DeployStep');
+        $this->shouldHaveType('Deployer\Common\DeployStep');
     }
 
     public function it_has_title()

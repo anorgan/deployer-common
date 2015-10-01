@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Deployer\Server;
+namespace spec\Deployer\Common\Server;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -17,7 +17,7 @@ class LocalSpec extends ObjectBehavior
 
     function it_is_abstract()
     {
-        $this->shouldHaveType('Deployer\Server\Local');
+        $this->shouldHaveType('Deployer\Common\Server\Local');
     }
 
     public function it_can_set_commands()

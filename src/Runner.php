@@ -1,8 +1,8 @@
 <?php
 
-namespace Deployer;
+namespace Deployer\Common;
 
-use Deployer\Server\AbstractServer;
+use Deployer\Common\Server\AbstractServer;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

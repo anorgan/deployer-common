@@ -19,13 +19,12 @@
     "phpspec/phpspec": "^2.0",
     "fabpot/php-cs-fixer": "^1.9"
   },
-  "bin": ["bin/deployer"],
   "config": {
     "bin-dir": "bin"
   },
   "autoload": {
     "psr-4": {
-      "Deployer\\": "src/"
+      "Deployer\\Common\\": "src/"
     }
   }
 }
