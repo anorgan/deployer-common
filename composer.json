@@ -1,6 +1,6 @@
 {
-  "name": "anorgan/deployer-cli",
-  "description": "CLI tool to help deploy projects to remote servers",
+  "name": "anorgan/deployer-common",
+  "description": "Common package for deployer CLI and web interface",
   "license": "MIT",
   "authors": [
     {
