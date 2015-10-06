@@ -1,4 +1,15 @@
 suites:
-    default:
-        namespace: Deployer\Common
-        psr4_prefix: Deployer\Common
+  default:
+    namespace: Deployer\Common
+    psr4_prefix: Deployer\Common
+
+extensions:
+  - PhpSpec\Extension\CodeCoverageExtension
+
+code_coverage:
+  whitelist: [src]
+  format:
+    - text
+    - clover
+  output:
+    clover: coverage.xml
