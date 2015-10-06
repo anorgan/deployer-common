@@ -3,8 +3,9 @@ suites:
     namespace: Deployer\Common
     psr4_prefix: Deployer\Common
 
-extensions:
-  - PhpSpec\Extension\CodeCoverageExtension
+formatter.name: pretty
+
+# extensions: [PhpSpec\Extension\CodeCoverageExtension]
 
 code_coverage:
   whitelist: [src]
