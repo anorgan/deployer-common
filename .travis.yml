@@ -25,9 +25,8 @@ addons:
     - libssh2-php
 
 before_script:
-  - php -m
   - composer self-update
-  - composer install --dev
+  - composer install --dev --ignore-platform-reqs
 
 script:
   - bin/phpspec run --format=pretty
