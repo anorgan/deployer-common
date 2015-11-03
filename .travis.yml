@@ -35,3 +35,4 @@ before_script:
 
 script:
   - bin/phpspec run --format=pretty
+  - bin/php-cs-fixer fix --dry-run
