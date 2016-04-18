@@ -114,7 +114,7 @@ class Deployer
         $step = new DeployStep($title, $commands, $servers);
 
         if (isset($config['mandatory'])) {
-            $step->setIsMandatory((boolean) $config['mandatory']);
+            $step->setIsMandatory((bool) $config['mandatory']);
         }
 
         return $step;
