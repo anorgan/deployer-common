@@ -16,7 +16,7 @@ class DeployStepSpec extends ObjectBehavior
     {
         $servers = [
             $server1,
-            $server2
+            $server2,
         ];
         $this->beConstructedWith('Step 1', $this->commands, $servers);
     }

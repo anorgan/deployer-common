@@ -21,10 +21,10 @@ class RunnerSpec extends ObjectBehavior
 
         $step1->getServers()->willReturn([
             $server1,
-            $server2
+            $server2,
         ]);
         $step2->getServers()->willReturn([
-            $server1
+            $server1,
         ]);
 
         $step1->getCommands()->willReturn(['echo "step 1: command 1"', 'echo "step 1: command 2"']);
@@ -68,14 +68,14 @@ class RunnerSpec extends ObjectBehavior
 
         $step1->getServers()->willReturn([
             $server1,
-            $server2
+            $server2,
         ]);
         $step2->getServers()->willReturn([
             $server1,
         ]);
         $this->getServersForStep($step1)->shouldReturn([
             $server1,
-            $server2
+            $server2,
         ]);
 
         $this->getServersForStep($step2)->shouldReturn([

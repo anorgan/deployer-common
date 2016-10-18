@@ -10,11 +10,11 @@ class LocalSpec extends ObjectBehavior
     public function let(LoggerInterface $logger)
     {
         $title = 'Local';
-        $path = '/var/www/deployer';
+        $path  = '/var/www/deployer';
         $this->beConstructedWith($title, $path, $logger);
     }
 
-    function it_is_abstract()
+    public function it_is_abstract()
     {
         $this->shouldHaveType('Anorgan\Deployer\Common\Server\Local');
     }

@@ -14,26 +14,26 @@ class DeployerSpec extends ObjectBehavior
         $config = [
             'servers' => [
                 'app1' => [
-                    'path' => '/var/www/deployer'
-                ]
+                    'path' => '/var/www/deployer',
+                ],
             ],
             'steps' => [
                 'Tests' => [
                     'commands' => [
-                        'bin/phpspec run -fpretty'
-                    ]
-                ]
-            ]
+                        'bin/phpspec run -fpretty',
+                    ],
+                ],
+            ],
         ];
         $this->beConstructedThrough('create', [$config]);
     }
 
-    function it_creates_runner_when_create_called_with_configuration()
+    public function it_creates_runner_when_create_called_with_configuration()
     {
         $this->shouldHaveType('Anorgan\Deployer\Common\Runner');
     }
 
-    function it_throws_exception_if_configuration_is_invalid()
+    public function it_throws_exception_if_configuration_is_invalid()
     {
         $config = [];
         $this->beConstructedThrough('create', [$config]);
@@ -48,7 +48,7 @@ class DeployerSpec extends ObjectBehavior
         $this->getSteps()[0]->getTitle()->shouldReturn('Tests');
         $this->getSteps()[0]->isMandatory()->shouldBe(true);
         $this->getSteps()[0]->getCommands()->shouldReturn([
-            'bin/phpspec run -fpretty'
+            'bin/phpspec run -fpretty',
         ]);
 
         $this->getSteps()[0]->getServers()->shouldHaveCount(1);

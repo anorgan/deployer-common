@@ -3,7 +3,7 @@
 use Symfony\CS\FixerInterface;
 
 $finder = Symfony\CS\Finder\DefaultFinder::create()
-    ->in([__DIR__ .'/src'])
+    ->in([__DIR__ .'/src', __DIR__ .'/spec'])
 ;
 
 
