@@ -1,9 +1,9 @@
 <?php
 
-namespace spec\Deployer\Common;
+namespace spec\Anorgan\Deployer\Common;
 
-use Deployer\Common\DeployStep;
-use Deployer\Common\Server\Local;
+use Anorgan\Deployer\Common\DeployStep;
+use Anorgan\Deployer\Common\Server\Local;
 use PhpSpec\ObjectBehavior;
 use Psr\Log\LoggerInterface;
 
@@ -39,7 +39,7 @@ class RunnerSpec extends ObjectBehavior
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType('Deployer\Common\Runner');
+        $this->shouldHaveType('Anorgan\Deployer\Common\Runner');
     }
 
     public function BAK_it_runs_commands_in_correct_order_and_logs_them(LoggerInterface $logger)

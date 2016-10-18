@@ -1,12 +1,11 @@
 <?php
 
-namespace spec\Deployer\Common;
+namespace spec\Anorgan\Deployer\Common;
 
-use Deployer\Common\DeployStep;
-use Deployer\Common\Server\Local;
+use Anorgan\Deployer\Common\DeployStep;
+use Anorgan\Deployer\Common\Server\Local;
+use InvalidArgumentException;
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-use \InvalidArgumentException;
 
 class DeployerSpec extends ObjectBehavior
 {
@@ -31,7 +30,7 @@ class DeployerSpec extends ObjectBehavior
 
     function it_creates_runner_when_create_called_with_configuration()
     {
-        $this->shouldHaveType('Deployer\Common\Runner');
+        $this->shouldHaveType('Anorgan\Deployer\Common\Runner');
     }
 
     function it_throws_exception_if_configuration_is_invalid()
@@ -45,7 +44,7 @@ class DeployerSpec extends ObjectBehavior
     public function it_should_create_runner_with_correct_steps(DeployStep $step, Local $server)
     {
         $this->getSteps()->shouldHaveCount(1);
-        $this->getSteps()[0]->shouldHaveType('\Deployer\Common\DeployStep');
+        $this->getSteps()[0]->shouldHaveType('\Anorgan\Deployer\Common\DeployStep');
         $this->getSteps()[0]->getTitle()->shouldReturn('Tests');
         $this->getSteps()[0]->isMandatory()->shouldBe(true);
         $this->getSteps()[0]->getCommands()->shouldReturn([
@@ -54,7 +53,7 @@ class DeployerSpec extends ObjectBehavior
 
         $this->getSteps()[0]->getServers()->shouldHaveCount(1);
         $this->getSteps()[0]
-            ->getServers()[0]->shouldHaveType('\Deployer\Common\Server\Local');
+            ->getServers()[0]->shouldHaveType('\Anorgan\Deployer\Common\Server\Local');
         $this->getSteps()[0]
             ->getServers()[0]->getTitle()->shouldReturn('app1');
         $this->getSteps()[0]

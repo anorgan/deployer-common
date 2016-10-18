@@ -1,10 +1,10 @@
 <?php
 
-namespace Deployer\Common;
+namespace Anorgan\Deployer\Common;
 
-use Deployer\Common\Server\AbstractServer;
-use Deployer\Common\Server\Local;
-use Deployer\Common\Server\Ssh;
+use Anorgan\Deployer\Common\Server\AbstractServer;
+use Anorgan\Deployer\Common\Server\Local;
+use Anorgan\Deployer\Common\Server\Ssh;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 

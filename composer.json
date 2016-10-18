@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Deployer\\Common\\": "src/"
+      "Anorgan\\Deployer\\Common\\": "src/"
     }
   }
 }

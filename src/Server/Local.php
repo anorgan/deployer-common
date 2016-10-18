@@ -1,6 +1,6 @@
 <?php
 
-namespace Deployer\Common\Server;
+namespace Anorgan\Deployer\Common\Server;
 
 use Symfony\Component\Process\Process;
 

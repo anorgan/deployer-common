@@ -1,8 +1,8 @@
 <?php
 
-namespace Deployer\Common;
+namespace Anorgan\Deployer\Common;
 
-use Deployer\Common\Server\AbstractServer;
+use Anorgan\Deployer\Common\Server\AbstractServer;
 
 class DeployStep
 {

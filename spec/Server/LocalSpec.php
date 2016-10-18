@@ -1,9 +1,8 @@
 <?php
 
-namespace spec\Deployer\Common\Server;
+namespace spec\Anorgan\Deployer\Common\Server;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 use Psr\Log\LoggerInterface;
 
 class LocalSpec extends ObjectBehavior
@@ -17,7 +16,7 @@ class LocalSpec extends ObjectBehavior
 
     function it_is_abstract()
     {
-        $this->shouldHaveType('Deployer\Common\Server\Local');
+        $this->shouldHaveType('Anorgan\Deployer\Common\Server\Local');
     }
 
     public function it_can_set_commands()

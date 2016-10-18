@@ -1,7 +1,7 @@
 suites:
   default:
-    namespace: Deployer\Common
-    psr4_prefix: Deployer\Common
+    namespace: Anorgan\Deployer\Common
+    psr4_prefix: Anorgan\Deployer\Common
 
 formatter.name: pretty
 
