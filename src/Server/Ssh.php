@@ -2,6 +2,8 @@
 
 namespace Deployer\Common\Server;
 
+use Psr\Log\LoggerInterface;
+use Ssh\Authentication\Agent;
 use Ssh\Configuration;
 use Ssh\Session;
 use Symfony\Component\Process\Process;
@@ -34,7 +36,8 @@ class Ssh extends AbstractServer
 
         $commandLine = $process->getCommandLine();
         $this->logger->info('Running "'.$commandLine.'"');
-        $this->getSession()->getExec()->run($commandLine);
+        $output   = $this->getSession()->getExec()->run($commandLine);
+        $this->logger->info('Output:'. PHP_EOL . $output);
     }
 
     /**
@@ -43,7 +46,7 @@ class Ssh extends AbstractServer
     private function getSession()
     {
         $configuration  = new Configuration($this->getHostname());
-        $authentication = new \Ssh\Authentication\Agent($this->user);
+        $authentication = new Agent($this->user);
         $session        = new Session($configuration, $authentication);
 
         return $session;
