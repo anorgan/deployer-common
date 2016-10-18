@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fbc115760e60b3b99d9c99848dbd119e",
-    "content-hash": "b2f09cdbd2c299ca01ae981280313b07",
+    "hash": "346c882ee4a67f8cd8ad8f637a28b392",
+    "content-hash": "c6cead78f3dc449bed88f0b23711cc8a",
     "packages": [
         {
             "name": "herzult/php-ssh",
@@ -214,7 +214,7 @@
             "time": "2015-06-14 21:17:01"
         },
         {
-            "name": "fabpot/php-cs-fixer",
+            "name": "friendsofphp/php-cs-fixer",
             "version": "v1.12.2",
             "source": {
                 "type": "git",
@@ -269,7 +269,6 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "abandoned": "friendsofphp/php-cs-fixer",
             "time": "2016-09-27 07:57:59"
         },
         {
