@@ -36,8 +36,8 @@ class Ssh extends AbstractServer
 
         $commandLine = $process->getCommandLine();
         $this->logger->info('Running "'.$commandLine.'"');
-        $output   = $this->getSession()->getExec()->run($commandLine);
-        $this->logger->info('Output:'. PHP_EOL . $output);
+        $output = $this->getSession()->getExec()->run($commandLine);
+        $this->logger->info('Output:'.PHP_EOL.$output);
     }
 
     /**
